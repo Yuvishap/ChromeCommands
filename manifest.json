@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Open tabs in Latvian bookmark",
+  "version": "1.0",
+  "description": "Opens all tabs in the Latvian bookmark",
+  "background": {
+    "service_worker": "openLatvianFolder.js"
+  },
+  "permissions": ["tabs", "tabGroups", "bookmarks"],
+
+  "commands": {
+    "open-latvian-folder": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L"
+      },
+      "description": "Open Latvian bookmark folder"
+    }
+  }
+}
